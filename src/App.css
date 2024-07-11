@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  background: #1d293a;
+  color: white;
+}
+
+#root {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-rows: 15vh 55vh;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 10vw);
+  gap: 10px;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+button {
+  background: #354357;
+  border: none;
+  transition: all .1s;
+  color: white;
+  font-size: 2rem;
+}
+
+button:hover {
+  background: #6c63ff;
+}
+
+.output {
+  display: grid;
+  place-content: center end; 
+  font-size: 2rem;
+}
